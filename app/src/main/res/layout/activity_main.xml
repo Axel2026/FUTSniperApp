@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    </WebView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@+id/settingsButton"
+        android:layout_x="4dp"
+        android:layout_y="60dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="helvetica"
+        android:text="Start"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="220dp"
+        android:layout_x="280dp"
+        android:layout_y="60dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="helvetica"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:icon="@drawable/icon24x24"
+        app:iconGravity="top" />
+
+
+</RelativeLayout>
